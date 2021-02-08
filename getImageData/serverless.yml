@@ -1,0 +1,32 @@
+service: getimagedata
+frameworkVersion: "2"
+custom:
+  bucket: "<<bucket name>>" # change this to the bucket that Amplify created
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: us-east-2
+  lambdaHashingVersion: 20201221
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - "s3:GetObject"
+      Resource:
+        - "arn:aws:s3:::${self:custom.bucket}/*"
+
+functions:
+  getImageData:
+    handler: handler.getImageData
+    events:
+      - s3:
+          bucket: ${self:custom.bucket}
+          event: s3:ObjectCreated:*
+          rules:
+            - suffix: .jpg
+          existing: true # important so that you can use the existing bucket Amplify created
+    environment:
+      AzureKey: "<<Azure Key>>"
+      VisionAPI: "<<Azure Vision API>>"
+      GOOGLE_APPLICATION_CREDENTIALS: "<<GCP Credentials>>"
+      NoSQLAPI: "<<GCP FireBase API>>"

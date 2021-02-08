@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "aws-sdk": "^2.828.0",
+    "axios": "^0.21.1",
+    "google-auth-library": "^6.1.4",
+    "serverless": "^2.19.0"
+  }
+}
