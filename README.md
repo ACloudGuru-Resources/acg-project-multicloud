@@ -2,6 +2,9 @@
 
 This repo contains some code used in an ACG Project showing how I completed the [January 2021 #CloudGuruChallenge](https://acloudguru.com/blog/engineering/cloudguruchallenge-multi-cloud-madness) from A Cloud Guru.  There were any number of ways to complete this challenge so this shouldn't be considered "THE" solution.  Rather, it represents some technologies that I wanted to learn about.
 
+> NOTE: People sometimes regard technology choice with all the energy and fervor as one's choice of favorite pizza toppings or a favorite sports team.  There are no shortage of people out there offering opinions on why one framework is "clearly superior" to another framework and why you should learn this thing and not waste time on that other thing.  Look, this is YOUR learning journey and YOU get to decide what path you take.  A rich learning journey isn't just blindly replicating a series of flawless steps...that just teaches you how to follow instructions.  You also need all those dead-ends, frustrations and do-overs so that you can operate with intuition.
+
+## The Steps
 
 | Step                                                                  | Platform | Service(s)         |
 |-----------------------------------------------------------------------|:--------:|--------------------|
@@ -11,8 +14,6 @@ This repo contains some code used in an ACG Project showing how I completed the 
 | 4. Use Image Recognition Service to tell us about the image.             |   Azure  | Vision             |
 | 5. Store metadata and path to image in NoSQL database.                   |    GCP   | Firestore          |
 
-
-> NOTE: People sometimes regard technology choice with all the energy and fervor as one's choice of favorite pizza toppings or a favorite sports team.  There are no shortage of people out there offering opinions on why one framework is "clearly superior" to another framework and why you should learn this thing and not waste time on that other thing.  Look, this is YOUR learning journey and YOU get to decide what path you take.  A rich learning journey isn't just blindly replicating a series of flawless steps...that just teaches you how to follow instructions.  You also need all those dead-ends, frustrations and do-overs so that you can operate with intuition.  
 
 ## Step 1 - Capture picture from webcam
 
