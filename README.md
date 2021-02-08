@@ -1,5 +1,6 @@
 # MultiCloudGuruChallenge
 
+This repo contains some code used in an ACG Project showing how I completed the [January 2021 #CloudGuruChallenge](https://acloudguru.com/blog/engineering/cloudguruchallenge-multi-cloud-madness) from A Cloud Guru.  There were any number of ways to complete this challenge so this shouldn't be considered "THE" solution.  Rather, it represents some technologies that I wanted to learn about.
 
 
 | Step                                                                  | Platform | Service(s)         |
